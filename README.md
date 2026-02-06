@@ -1,0 +1,1 @@
+# Sistem-Pakar-Diagnosa-Penyakit-Kista-Dermoid-Menggunakan-Metode-Forward-Chaining
