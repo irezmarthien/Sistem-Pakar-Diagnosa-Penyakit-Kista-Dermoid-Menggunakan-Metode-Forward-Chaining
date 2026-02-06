@@ -1,0 +1,170 @@
+/* CSS KHUSUS UNTUK HALAMAN HASIL DIAGNOSA */
+
+/* Override body background untuk halaman hasil */
+body {
+    background: #f4f6fb !important;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tambahkan padding top untuk main agar tidak tertutup navbar */
+main {
+    padding-top: 90px;
+    flex: 1;
+    min-height: calc(100vh - 90px);
+}
+
+/* Container khusus hasil - override container utama TAPI TIDAK UNTUK NAVBAR */
+main .container,
+.hasil-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading colors - HANYA untuk konten dalam main, BUKAN navbar */
+main h1,
+main h2,
+main h3 {
+    color: #5b0a5e;
+}
+
+main h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+main h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+main h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* Paragraph styling */
+main p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+main p strong {
+    color: #5b0a5e;
+    font-weight: 600;
+}
+
+/* Box informasi */
+.box {
+    margin-top: 25px;
+    padding: 25px;
+    background: #f9f9ff;
+    border-left: 6px solid #7a1f7a;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #5b0a5e;
+}
+
+.box p {
+    margin-bottom: 8px;
+}
+
+.box ul {
+    margin: 15px 0 0 20px;
+    padding-left: 0;
+    list-style-type: disc;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hasil akhir */
+.hasil-akhir {
+    margin-top: 35px;
+    padding: 30px;
+    background: linear-gradient(135deg, #eef0ff 0%, #f5f7ff 100%);
+    border-radius: 12px;
+    border: 2px solid #7a1f7a;
+    box-shadow: 0 4px 15px rgba(122, 31, 122, 0.1);
+}
+
+.hasil-akhir h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5b0a5e;
+    font-size: 28px;
+}
+
+.hasil-akhir h3 {
+    margin: 20px 0 15px 0;
+    font-size: 24px;
+    color: #3b0a45;
+}
+
+.hasil-akhir p {
+    margin-bottom: 15px;
+}
+
+/* Badge tingkat risiko */
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #7a1f7a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-left: 8px;
+    box-shadow: 0 2px 8px rgba(122, 31, 122, 0.3);
+}
+
+/* Footer adjustment */
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin: 20px auto 30px auto;
+        width: 95%;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .hasil-akhir {
+        padding: 20px;
+    }
+}

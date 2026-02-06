@@ -1,0 +1,107 @@
+/* LIGHT REVERSE THEME */
+:root {
+    --primary-color: #2563eb;
+    /* Biru Cerah */
+    --sidebar-bg: #ffffff;
+    /* Putih Bersih */
+    --sidebar-text: #475569;
+    /* Abu-abu Slate */
+    --active-bg: #eff6ff;
+    /* Biru Muda Transparan */
+    --body-bg: #f8fafc;
+    /* Abu-abu Sangat Muda */
+    --border-color: #e2e8f0;
+    /* Warna Garis Halus */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+}
+
+/* SIDEBAR REVERSE */
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    z-index: 1000;
+    border-right: 1px solid var(--border-color);
+    /* Garis pemisah tipis */
+    transition: all 0.3s;
+}
+
+/* Header Admin di Sidebar */
+.sidebar .text-center {
+    background-color: #fff;
+    padding: 30px 10px;
+}
+
+.sidebar .text-center i {
+    color: var(--primary-color) !important;
+    /* Icon jadi biru */
+}
+
+.sidebar .text-center h6,
+.sidebar .text-center small {
+    color: #1e293b !important;
+    /* Teks jadi gelap */
+}
+
+/* Link Menu */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    margin: 5px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #f1f5f9;
+    color: var(--primary-color);
+}
+
+.sidebar a.active {
+    background-color: var(--active-bg);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Icon di Menu */
+.sidebar a i {
+    font-size: 1.2rem;
+    margin-right: 12px;
+}
+
+/* Bagian Logout di Bawah */
+.sidebar .position-absolute {
+    background-color: #fff;
+    border-top: 1px solid var(--border-color);
+}
+
+/* KONTEN UTAMA */
+.content {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+/* CARD & TABLE STYLE */
+.card {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}

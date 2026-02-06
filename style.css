@@ -1,0 +1,309 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* NAVBAR - Styling kuat agar tidak ter-override */
+.navbar {
+    background-color: #3b0a45 !important;
+    padding: 15px 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    width: 100% !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar .container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    max-width: 1100px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.navbar .logo {
+    color: #fff !important;
+    font-family: 'Catamaran', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+.navbar .nav-menu {
+    list-style: none !important;
+    display: flex !important;
+    gap: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar .nav-menu li a {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 8px 14px !important;
+    transition: 0.3s !important;
+    font-weight: 500 !important;
+}
+
+.navbar .nav-menu li a:hover {
+    color: #f1c40f !important;
+}
+
+.navbar .nav-menu li a.active {
+    border-bottom: 2px solid #fff !important;
+    font-weight: bold !important;
+}
+
+/* HEADER / MASTHEAD */
+.masthead {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a0572, #3b0a45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 80px;
+}
+
+.masthead-content h1 {
+    font-size: 48px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.masthead-content h2 {
+    font-weight: 300;
+    margin: 15px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #f1c40f;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* BACKGROUND CIRCLE */
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bg-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -150px;
+}
+
+.bg-circle-2 {
+    width: 450px;
+    height: 450px;
+    top: -200px;
+    right: -200px;
+}
+
+.bg-circle-3 {
+    width: 250px;
+    height: 250px;
+    bottom: -120px;
+    right: 10%;
+}
+
+.bg-circle-4 {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: 10%;
+}
+
+/* SECTION */
+section {
+    padding: 80px 0;
+    flex: 1;
+}
+
+section:first-of-type {
+    padding-top: 100px;
+}
+
+/* INFORMASI */
+.section-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.image-box img {
+    width: 300px;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.text-box h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    line-height: 1.7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* FORM DIAGNOSA */
+.center {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.diagnosa-form {
+    background-color: #fff;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.diagnosa-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.diagnosa-form input[type="text"],
+.diagnosa-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.diagnosa-form p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.checkbox {
+    display: block;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.diagnosa-form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #3b0a45;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.diagnosa-form button:hover {
+    background-color: #6a0572;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .masthead-content h1 {
+        font-size: 34px;
+    }
+
+    .center {
+        font-size: 26px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
